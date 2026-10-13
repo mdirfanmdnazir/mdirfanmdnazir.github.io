@@ -1,0 +1,66 @@
+/* V13: one website, two differentiated brands. Public-facing copy only, no prototype footnotes. */
+.value-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#c4c8ba;margin:28px 0 34px;border:1px solid #c4c8ba}
+.value-strip>div{background:#e5e9d6;padding:22px 22px 24px;display:flex;flex-direction:column;gap:8px}
+.value-strip strong{font:700 16px/1.35 Manrope,sans-serif;color:#272b26}
+.value-strip small{font:400 12px/1.65 'DM Sans',sans-serif;color:#555e55}
+.value-symbol{font:700 20px Manrope,sans-serif;color:#62755a}
+.scope-clarity{background:#f2f2eb;border:1px solid #c3caba;padding:24px 30px;margin-top:26px;display:flex;align-items:baseline;gap:40px}
+.scope-clarity strong{font:700 16px/1.4 Manrope,sans-serif;flex:0 0 250px}
+.scope-clarity p{font:400 12px/1.8 'DM Sans',sans-serif;margin:0;color:#525a50}
+.pricing-section--corporate .value-strip>div{background:#edf0ec}
+.pricing-section--corporate .scope-clarity{background:#f2f3f0}
+.hias-crosspromo,.home-hias-feature{display:grid;grid-template-columns:1fr 1fr;background:#1b1513;color:#e3e8cd;min-height:540px}
+.hias-crossphoto,.home-hias-image{min-height:480px;position:relative;overflow:hidden}
+.hias-crossphoto img,.home-hias-image img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0}
+.hias-crosscopy,.home-hias-copy{padding:clamp(34px,6.5vw,110px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:24px}
+.hias-crosscopy .overline,.home-hias-copy .overline{color:#bdc9ad}
+.hias-crosslogo,.home-hias-logo{max-width:170px;max-height:90px;object-fit:contain;object-position:left center;mix-blend-mode:screen}
+.hias-crosscopy h2,.home-hias-copy h2{font:400 clamp(39px,4.6vw,66px)/1.15 'Playfair Display',Georgia,serif;letter-spacing:-.05em;margin:0;color:#e8ecd7}
+.hias-crosscopy h2 em,.home-hias-copy h2 em{color:#ced7b1}
+.hias-crosscopy p:not(.overline),.home-hias-copy p:not(.overline){font:400 14px/1.85 'DM Sans',sans-serif;color:#d0d0c4;margin:0}
+.hias-crosscopy .cta{background:#e3e8cd;color:#1b1513}
+.inline-editorial-link{color:#e3e8cd;font:700 13px/1.45 Manrope,sans-serif;text-decoration:underline;text-underline-offset:7px}
+.hias-page .navbar{background:#1d1815;color:#e2e9d1}
+.hias-page .brand,.hias-page .navlinks a{color:#e7eadb}
+.hias-page .navlinks .nav-action{border-color:#dce7c8;color:#e7eadb}
+.hias-main-hero{background:#1b1513;color:#e3e8cd;padding:70px clamp(24px,7vw,110px) 90px}
+.hias-main-hero-inner{max-width:1450px;margin:auto;display:grid;grid-template-columns:1fr .9fr;gap:6vw;align-items:center}
+.hias-hero-copy{display:flex;flex-direction:column;align-items:flex-start;gap:24px}
+.hias-hero-copy .overline{color:#cad4ae}
+.hias-main-logo{width:clamp(145px,14vw,225px);max-height:125px;object-fit:contain;object-position:left center;mix-blend-mode:screen}
+.hias-hero-copy h1{color:#e9edda;font:400 clamp(44px,5.3vw,82px)/1.14 'Playfair Display',Georgia,serif;letter-spacing:-.055em;margin:0}
+.hias-hero-copy h1 em{color:#cad7a7}
+.hias-hero-copy p{color:#ccd0bd;max-width:570px;line-height:1.9;margin:0;font-size:15px}
+.hias-hero-picture{position:relative;aspect-ratio:4/5;min-height:400px}
+.hias-hero-picture img{width:100%;height:100%;object-fit:cover;object-position:center}
+.hias-hero-picture span{position:absolute;bottom:0;left:0;background:#e3e8cd;color:#1b1513;padding:13px 19px;font:700 10px Manrope,sans-serif;letter-spacing:.14em}
+.hias-page .hias-purpose{background:#e5e8d7;padding:90px clamp(24px,7vw,110px);color:#292b24}
+.hias-purpose>h2{font:400 clamp(42px,5vw,70px)/1.2 'Playfair Display',Georgia,serif;letter-spacing:-.05em;margin:40px 0 17px}
+.hias-purpose>p{max-width:720px;line-height:1.9;color:#555b4f;margin-bottom:35px}
+.hias-services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.hias-services-grid article{border:1px solid #bcc1b0;padding:28px}
+.hias-services-grid span{font:700 11px Manrope,sans-serif;color:#818b77}
+.hias-services-grid h3{font:400 29px 'Playfair Display',Georgia,serif;margin:32px 0 12px}
+.hias-services-grid p{font:400 13px/1.8 'DM Sans',sans-serif;color:#5e655a}
+.hias-page .team-preview{background:#f4f1e9}
+.hias-page .host-roster{grid-template-columns:minmax(260px,400px)}
+.team-nextstep{font-size:13px;line-height:1.8;color:#686b62;margin:25px 0 0}
+.hias-page .pricing-section--hias{padding-top:90px}
+.hias-service-terms{border:1px solid #777865;padding:28px 34px;margin-top:26px;color:#e5e8d3}
+.hias-service-terms h3{font:400 29px/1.35 'Playfair Display',Georgia,serif;margin:0 0 9px}
+.hias-service-terms p{font:400 12px/1.9 'DM Sans',sans-serif;color:#d1d0c0;margin:0 0 22px}
+.hias-service-terms strong{color:#e3eaca}
+.hias-policy-split{display:grid;grid-template-columns:1fr 1fr;gap:22px;border-top:1px solid #646456;padding-top:18px}
+.hias-policy-split div{display:flex;flex-direction:column;gap:8px;font:400 12px/1.8 'DM Sans',sans-serif;color:#bec5b5}
+.hias-policy-split div strong{font:700 13px Manrope,sans-serif}
+.hias-page .testimonials--hias{scroll-margin-top:70px}
+.hias-last{padding:90px 24px;background:#e3e8cd;text-align:center;display:flex;align-items:center;flex-direction:column;gap:24px;color:#242720}
+.hias-last h2{font:400 clamp(45px,5.5vw,72px) 'Playfair Display',Georgia,serif;letter-spacing:-.055em;margin:0}
+.hias-last h2 em{color:#657356}
+.hias-last p{max-width:550px;line-height:1.85;margin:0}
+.hias-page .footer-top{gap:0}
+@media(max-width:1000px){.hias-main-hero-inner{grid-template-columns:1fr 1fr;gap:36px}.hias-hero-copy h1{font-size:clamp(42px,5vw,64px)}}
+@media(max-width:760px){.value-strip{grid-template-columns:1fr}.value-strip>div{padding:19px 22px}.scope-clarity{display:block}.scope-clarity strong{display:block;margin-bottom:9px}.hias-crosspromo,.home-hias-feature,.hias-main-hero-inner{grid-template-columns:1fr}.hias-crossphoto,.home-hias-image{min-height:320px}.hias-crosscopy,.home-hias-copy{padding:50px 25px}.hias-main-hero{padding:35px 24px 70px}.hias-hero-picture{min-height:300px;aspect-ratio:5/4}.hias-hero-copy h1{font-size:clamp(44px,10vw,64px)}.hias-page .hias-purpose{padding:65px 24px}.hias-services-grid,.hias-policy-split{grid-template-columns:1fr}.hias-service-terms{padding:24px}.hias-crosslogo,.home-hias-logo{max-width:145px}}
+/* Navigation legibility at laptop and phone widths */
+@media(max-width:1260px) and (min-width:981px){.navlinks{gap:14px;font-size:11px}.nav-action{gap:12px;padding:13px 15px}.navbar{padding:0 24px}}
+@media(max-width:980px){.navbar{height:75px;padding:0 23px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:75px;right:0;left:0;background:var(--ivory-light);padding:22px;flex-direction:column;align-items:stretch;box-shadow:0 10px 20px #0002;z-index:10}.navlinks.open{display:flex}.hias-page .navlinks{background:#28231e}.hias-page .navlinks a,.hias-page .menu-toggle{color:#e5e8d4}.hias-page .navlinks .nav-action{background:#e3e8cd;color:#181511;border-color:#e3e8cd}}

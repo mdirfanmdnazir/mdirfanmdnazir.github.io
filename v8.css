@@ -1,0 +1,16 @@
+/* V8: authentic testimonials from actual client messages */
+.testimonials--home{background:#e6e9d7}
+.review-card--real{background:#f9f8f0;border-color:#ccd1bf}
+.review-card--real:nth-child(2){background:#edeedc}
+.review-card--featured{border-top:3px solid #8b9275}
+.review-quote{font:400 clamp(20px,1.95vw,29px)/1.47 var(--serif);letter-spacing:-.025em;margin:26px 0 auto;overflow-wrap:break-word;max-width:410px}
+.review-quote .rating-large{display:block;font:500 clamp(55px,6vw,87px)/1 var(--serif);letter-spacing:-.05em;color:#34392d}
+.review-quote .rating-large span{font:400 23px var(--sans);letter-spacing:normal;color:#666d5e}
+.review-quote .rating-details{display:block;font:600 13px/1.7 var(--sans);max-width:270px;margin-top:20px;color:#444a3e}
+.review-quote .rating-tags{display:block;font:500 11px/1.9 var(--sans);max-width:280px;margin-top:16px;color:#666c5e}
+.testimonials--wedding .review-cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.testimonials--wedding .review-card--real:nth-child(4),.testimonials--wedding .review-card--real:nth-child(6){background:#e8ebd8}
+.testimonials--wedding .review-card--real:nth-child(5){background:#f5f3e9}
+.reviews-notice{max-width:700px}
+@media(max-width:900px){.testimonials--wedding .review-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.testimonials--wedding .review-cards{grid-template-columns:1fr}.review-quote{font-size:24px}.review-card--real{min-height:250px}}

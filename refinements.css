@@ -1,0 +1,29 @@
+/* Accessibility, privacy and enquiry refinements. */
+.navbar { z-index: 70; }
+.footer-contact { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; padding: 24px 0 0; font-size: 12px; color: #e4e8cf; }
+.footer-contact a, .privacy-trigger { text-decoration: underline; text-underline-offset: 4px; }
+.privacy-trigger { border: 0; padding: 10px 0; background: transparent; color: inherit; font: inherit; }
+.privacy-content { padding: 32px clamp(24px, 5vw, 50px); }
+.privacy-content .modal-close { display: block; margin-left: auto; color: inherit; }
+.privacy-content h2 { font: 400 36px/1.2 var(--serif); }
+.privacy-content h3 { font: 700 15px/1.5 var(--modern); margin: 28px 0 8px; }
+.privacy-content p { font: 400 14px/1.75 var(--sans); overflow-wrap: anywhere; }
+.privacy-content a { text-decoration: underline; text-underline-offset: 3px; }
+.draft-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 12px; }
+.draft-actions .cta { font-size: 12px; padding: 12px 16px; }
+[hidden] { display: none !important; }
+dialog { max-height: 94dvh; max-width: min(650px, 95vw); }
+html:has(dialog[open]) { overflow: hidden; }
+textarea:focus-visible { outline: 3px solid #84947b; outline-offset: 4px; }
+.carousel-dots button, .carousel-dots button.active { position: relative; width: 32px; height: 32px; min-width: 32px; background: transparent; opacity: 1; border-radius: 0; display: grid; place-items: center; }
+.carousel-dots button::after { content: ''; width: 9px; height: 9px; border-radius: 10px; background: currentColor; opacity: .25; }
+.carousel-dots button.active::after { width: 25px; opacity: .9; }
+@media (max-width: 760px) {
+  dialog input, dialog select, dialog textarea { font-size: 16px; min-width: 0; }
+  .carousel-arrow { width: 44px; height: 44px; }
+  .hero-actions { flex-wrap: wrap; }
+}
+@media (pointer: coarse) {
+  .carousel-dots button, .carousel-dots button.active { width: 44px; height: 44px; min-width: 44px; }
+  .menu-toggle, .modal-close { min-width: 44px; min-height: 44px; }
+}

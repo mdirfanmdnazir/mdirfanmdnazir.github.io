@@ -1,0 +1,33 @@
+/* V16 · Social proof early, rich reviews, and seven on-demand videos */
+.testimonials--home .review-carousel-track .review-card {flex:0 0 47%;width:47%;min-height:320px}
+.testimonials--home .review-carousel-track {padding-right:0}
+.testimonials--home .review-carousel-track::after{content:"";flex:0 0 53%;pointer-events:none}
+.testimonials--home .review-quote {font-size:clamp(24px,2.2vw,34px);line-height:1.38}
+.testimonials--home .review-credit {margin-top:auto}
+.testimonials--home .reviews-lead h2 {max-width:800px}
+.carousel-dots {display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 0;align-items:center;justify-content:center}
+.carousel-dots button{width:9px;height:9px;min-width:9px;border:0;background:currentColor;opacity:.25;border-radius:50%;padding:0;cursor:pointer}
+.carousel-dots button.active{width:29px;border-radius:20px;opacity:.9}
+.carousel-dots button:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.youtube-section{background:#eeeee4;padding-top:clamp(60px,8vw,110px);padding-bottom:clamp(70px,9vw,122px)}
+.youtube-heading{display:flex;align-items:end;justify-content:space-between;gap:45px;padding:44px 0 31px;color:#272923}
+.youtube-heading h2{font:500 clamp(43px,5vw,76px)/1.05 'Playfair Display',Georgia,serif;letter-spacing:-.04em;margin:10px 0 0}
+.youtube-heading em{color:#5d674f}
+.youtube-heading>p{max-width:390px;font:400 15px/1.7 'DM Sans',Arial,sans-serif;color:#5b5c55;margin:0}
+.youtube-video-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.video-card{background:#f9f8f2;border:1px solid #d9dacf;min-width:0;overflow:hidden;transition:transform .2s ease,box-shadow .2s}
+.video-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px #12130f17}
+.video-poster{position:relative;display:block;width:100%;aspect-ratio:4/5;overflow:hidden;cursor:pointer;background:#262928;border:0;padding:0}
+.video-poster:focus-visible{outline:3px solid #90a876;outline-offset:-3px}
+.video-poster img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.72);transition:transform .3s,filter .3s}
+.video-card:hover .video-poster img{transform:scale(1.05);filter:brightness(.82)}
+.video-play-icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:62px;height:62px;background:#e3e8cd;color:#1c221c;border-radius:50%;font-size:22px;padding-left:4px;box-shadow:0 4px 30px #10140d77}
+.video-index{position:absolute;left:17px;bottom:17px;color:#fff;font:700 10px/1.4 Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.video-meta{display:flex;align-items:center;justify-content:space-between;gap:5px;padding:15px 15px 17px;color:#292b27;font:700 11px/1.45 Manrope,Arial,sans-serif}
+.video-meta a{font:600 10px/1.35 'DM Sans',Arial,sans-serif;text-align:right;text-decoration:underline;text-underline-offset:3px;color:#67745d}
+.video-card iframe {width:100%;height:100%;border:0;display:block;position:absolute;inset:0;background:#0c0c0c}
+.youtube-footer-note{font:400 12px/1.5 'DM Sans',Arial,sans-serif;color:#787970;margin:20px 0 0}
+@media(max-width:1020px){.youtube-video-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.testimonials--home .review-carousel-track .review-card{flex-basis:65%;width:65%}.testimonials--home .review-carousel-track{padding-right:0}.testimonials--home .review-carousel-track::after{flex-basis:35%}}
+@media(max-width:760px){.testimonials--home .review-carousel-track .review-card{flex-basis:88%;width:88%;min-height:315px}.testimonials--home .review-carousel-track{padding-right:12%}.testimonials--home .review-carousel-track::after{display:none}.testimonials--home .review-quote{font-size:clamp(21px,5.6vw,28px)}.youtube-heading{display:block;padding:22px 0 25px}.youtube-heading h2{font-size:42px}.youtube-heading>p{margin-top:20px}.youtube-video-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.video-play-icon{width:47px;height:47px;font-size:18px}.video-index{bottom:11px;left:10px;font-size:8px}.video-meta{padding:12px 10px;min-height:60px;display:block}.video-meta a{display:block;text-align:left;margin-top:6px}.carousel-dots{gap:6px}}
+@media(max-width:420px){.youtube-video-grid{gap:9px}.video-meta{font-size:10px}.video-meta a{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.video-card,.video-poster img{transition:none}}

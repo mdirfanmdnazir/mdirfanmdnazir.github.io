@@ -1,0 +1,21 @@
+/* V11: horizontal native-scroll review carousels: accessible, swipeable and keyboard usable */
+.review-carousel {position:relative; max-width:100%; margin-top:18px}
+.carousel-toolbar {display:flex; justify-content:space-between; align-items:center; gap:24px; margin-bottom:15px}
+.carousel-swipe-hint {font:700 10px/1.5 var(--modern, sans-serif); letter-spacing:.15em; opacity:.66}
+.carousel-controls {display:flex; align-items:center; gap:15px}
+.carousel-arrow {width:43px;height:43px;border-radius:50%;cursor:pointer;display:grid;place-items:center;border:1px solid currentColor;background:transparent;color:inherit;font:400 22px/1 sans-serif;transition:background .18s,color .18s,opacity .18s}
+.carousel-arrow:hover:not(:disabled){background:#24271f;color:#fff}
+.carousel-arrow:focus-visible{outline:3px solid #81936b;outline-offset:3px}
+.carousel-arrow:disabled{opacity:.3;cursor:not-allowed}
+.carousel-count{font:700 11px/1.5 var(--modern,sans-serif);letter-spacing:.12em;white-space:nowrap;min-width:56px;text-align:center}
+.review-carousel-track{display:flex!important;gap:17px!important;overflow-x:auto!important;overflow-y:hidden;scroll-behavior:smooth;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;padding:2px 31% 16px 2px;scrollbar-width:none;scroll-padding-inline:2px;align-items:stretch;grid-template-columns:none!important}
+.review-carousel-track::-webkit-scrollbar{display:none}
+.review-carousel-track .review-card{flex:0 0 60%;width:60%;min-width:0;max-width:none;scroll-snap-align:start;margin:0;min-height:355px;transform:none!important;box-sizing:border-box}
+.review-carousel-track .review-quote{max-width:none}
+.testimonials--wedding .review-carousel-track,.testimonials--home .review-carousel-track{grid-template-columns:none!important}
+.testimonials--hias-real .review-carousel-track .review-card{min-height:340px}
+.testimonials--hias-real .carousel-arrow:hover:not(:disabled){background:#e3e8cd;color:#191311}
+.review-carousel-track .review-credit strong{font-size:11px;letter-spacing:.07em}
+@media(max-width:960px){.review-carousel-track{padding-right:13%}.review-carousel-track .review-card{width:84%;flex-basis:84%}}
+@media(max-width:760px){.review-carousel-track{gap:12px!important;padding-right:12%;padding-bottom:9px}.review-carousel-track .review-card{width:88%;flex-basis:88%;min-height:295px;padding:26px 23px}.testimonials--hias-real .review-carousel-track .review-card{min-height:300px}.carousel-toolbar{margin-bottom:12px}.carousel-swipe-hint{font-size:9px;max-width:132px}.carousel-controls{gap:8px}.carousel-arrow{width:37px;height:37px}.carousel-count{font-size:10px;min-width:50px}.review-carousel-track .review-quote{font-size:clamp(21px,5.6vw,27px)} }
+@media(prefers-reduced-motion:reduce){.review-carousel-track{scroll-behavior:auto}}

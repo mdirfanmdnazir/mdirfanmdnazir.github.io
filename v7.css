@@ -1,0 +1,17 @@
+/* V7 warmth pass: friendlier first impression, brand visual design retained */
+.warm-hello{position:relative;background:#e2e7d1;color:#211b18;padding:68px clamp(24px,7vw,115px) 75px;display:grid;grid-template-columns:1fr 1fr;gap:6%;align-items:start;overflow:hidden}
+.warm-hello-intro,.warm-hello-detail{position:relative;z-index:1}
+.warm-kicker{font:700 10px/1.5 var(--modern);letter-spacing:.13em;color:#666d57;display:block;margin-bottom:22px}
+.warm-hello h2{font:400 clamp(40px,4.35vw,69px)/1.1 var(--serif);letter-spacing:-.045em;margin:0}
+.warm-hello h2 em{color:#64735d;font-weight:400}
+.warm-hello-detail{padding-top:37px;max-width:510px}
+.warm-hello-detail p{font:400 15px/1.85 var(--sans);margin:0 0 14px;color:#454a40}
+.warm-hello-detail a{display:inline-flex;margin-top:15px;color:#2c342b;text-decoration:none;font:700 12px var(--modern);border-bottom:1px solid currentColor;padding-bottom:8px}
+.warm-hello-detail a span{margin-left:14px}
+.warm-signature{position:absolute;right:7%;bottom:14px;font:italic 30px var(--serif);color:#7f8c75;transform:rotate(-9deg);opacity:.85}
+.home-hero-left .hero-desc{max-width:480px}
+.home-hero-left h1{font-size:clamp(54px,5.8vw,100px);line-height:1.06}
+.home-hero .hero-actions button{min-width:215px}
+.wedding-copy h1{font-size:clamp(58px,6vw,108px);line-height:1}
+@media(max-width:850px){.warm-hello{grid-template-columns:1fr;gap:0}.warm-hello-detail{padding-top:24px}}
+@media(max-width:560px){.warm-hello{padding:58px 24px 67px}.warm-hello h2{font-size:43px}.warm-signature{font-size:24px}.home-hero-left h1{font-size:clamp(52px,12vw,70px)}}

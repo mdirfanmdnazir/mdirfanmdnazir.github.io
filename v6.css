@@ -1,0 +1,93 @@
+
+/* V6 — real portfolio media, original brand system retained */
+html {scroll-behavior:smooth}
+img{max-width:100%;display:block}
+button,a{touch-action:manipulation}
+.home-hero-right{background:#292928}
+.portrait-frame{height:87%;width:85%;margin-top:90px;border-radius:180px 180px 0 0;overflow:hidden;border-color:#77786b}
+.portrait-frame::before{z-index:3;pointer-events:none}
+.portrait-shape{position:absolute;inset:0;display:block;width:100%;height:100%}
+.portrait-shape img{width:100%;height:100%;object-fit:cover;object-position:51% 34%;filter:saturate(.75) contrast(1.04)}
+.portrait-shape::after{content:'';position:absolute;inset:40% 0 0;background:linear-gradient(transparent,rgba(13,13,12,.62))}
+.portrait-note{position:absolute;bottom:26px;left:24px;right:24px;z-index:4;font-size:10px;max-width:none;text-align:left;color:#f5f2e8}
+.frame-index{z-index:5;text-shadow:0 1px 5px #111}
+.home-hero-right .hero-side-type{z-index:5}
+.card-art{isolation:isolate}
+.card-art::before,.card-art::after{display:none}
+.card-art-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.76) contrast(1.05);transition:transform .55s ease}
+.service-card:hover .card-art-photo,.work-tile:hover .tile-photo{transform:scale(1.055)}
+.card-art::after{display:block;content:'';background:linear-gradient(180deg,transparent 25%,rgba(0,0,0,.69));position:absolute;inset:0;pointer-events:none}
+.card-display-serif,.card-display-modern{position:absolute;bottom:22px;left:30px;right:10px;z-index:2;color:#f7f4e9;text-align:left;font-size:47px;text-shadow:0 1px 12px #0005}
+.card-display-modern{font-size:58px;line-height:.86}
+.card-wedding-art{background:#29251f}
+.card-corp-art{background:#202224}
+.work-tile{overflow:hidden}
+.tile-photo{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .55s ease;filter:saturate(.68)}
+.work-tile .tile-focus{position:relative;z-index:0;overflow:hidden}
+.work-tile .tile-focus::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.5))}
+.work-tile .tile-meta,.work-tile .tile-caption{position:relative;z-index:4}
+.tile-focus .tile-big-text,.tile-focus .tile-corporate-text,.tile-focus .tile-bilingual-text{position:relative;z-index:2;color:#fff;text-shadow:0 1px 15px #0008}
+.tile-orbit,.tile-stage{opacity:.15}
+.about-graphic{overflow:hidden;background:#2b2b28}
+.about-graphic img{height:100%;width:100%;object-fit:cover;object-position:center 30%;filter:saturate(.72)}
+.about-graphic small{z-index:2;background:#191311;color:#f5f1e7;padding:8px 13px}
+.wedding-visual{background:#211b19}
+.wedding-visual .wedding-live-image{position:absolute;width:100%;height:100%;inset:0;object-fit:cover;object-position:38% center;filter:saturate(.85)}
+.wedding-visual::after{content:'';position:absolute;inset:55% 0 0;background:linear-gradient(transparent,#171310a3)}
+.wedding-overline,.wedding-image-label,.wedding-vertical{z-index:3;color:#fbf6e9;text-shadow:0 1px 9px #000}
+.wedding-overline{top:28px}
+.wedding-image-label{bottom:35px;width:auto;max-width:85%;font-size:10px;font-weight:700}
+.wedding-outline{display:none}
+.wedding-art{display:none}
+.corp-visual{background:#202223}
+.corp-visual .corporate-live-image{position:absolute;inset:0;height:100%;width:100%;object-fit:cover;object-position:49% 30%;filter:saturate(.65) contrast(1.1)}
+.corp-visual::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,16,18,.06) 0%,transparent 50%,rgba(16,16,18,.6) 100%)}
+.corp-architecture{display:none}
+.corp-visual-top,.corp-visual-bottom{z-index:2;text-shadow:0 1px 8px #000}
+.hias-identity{position:relative;overflow:hidden}
+.hias-identity .hias-mark{z-index:3;position:relative}
+.hias-team-photo{width:100%;height:255px;object-fit:cover;object-position:center 38%;margin-top:26px;filter:saturate(.72);border:1px solid rgba(255,255,255,.15)}
+.team-gallery{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:22px 0 10px}
+.team-gallery figure{margin:0;position:relative;overflow:hidden;background:#171311;min-height:240px}
+.team-gallery img{width:100%;height:100%;object-fit:cover;object-position:center 55%;transition:transform .5s ease}
+.team-gallery img:hover{transform:scale(1.04)}
+.team-gallery figure:nth-child(2){aspect-ratio:3/4}
+.team-gallery figure:nth-child(3){aspect-ratio:3/4}
+.team-gallery figcaption{position:absolute;bottom:0;inset-inline:0;color:#fff;font:700 9px var(--modern);letter-spacing:.1em;padding:30px 14px 12px;background:linear-gradient(transparent,#171311ac)}
+.host-irfan{background:#282622;overflow:hidden}
+.host-portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.host-irfan:after{display:none}
+.host-irfan .host-image-label{background:#151311d6;padding:5px 8px;color:#f5efe3}
+.host-irfan .host-portrait-symbol{display:none}
+/* media gallery shared across the three site pages */
+.media-showcase{padding:105px clamp(24px,7vw,115px);background:#f0efe6;color:#1b1715}
+.media-showcase.dark-showcase{background:#202224;color:#f5f3ed}
+.media-showcase.wedding-showcase{background:#e3e8cd;color:#211b17}
+.media-head{display:grid;grid-template-columns:1.1fr .9fr;gap:65px;align-items:end;margin:52px 0 34px}
+.media-head h2{font:400 clamp(44px,5vw,76px)/1.08 var(--serif);letter-spacing:-.05em;margin:0}
+.media-showcase.dark-showcase .media-head h2{font-family:var(--modern);font-weight:700;letter-spacing:-.075em}
+.media-head h2 em{color:#77816e}.dark-showcase .media-head h2 em{color:#9ea69f}
+.media-head p{font-size:14px;color:#64645c;max-width:450px;line-height:1.9}
+.dark-showcase .media-head p{color:#c2c3bd}
+.media-cards{display:grid;grid-template-columns:1.4fr 1fr;gap:18px}
+.media-cards.single{grid-template-columns:1fr}
+.media-card{background:#171615;color:#f4f2ea;overflow:hidden;min-width:0}
+.dark-showcase .media-card{background:#323436}
+.media-card video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#111}
+.media-card.vertical video{aspect-ratio:16/9;object-fit:contain;background:#131413}
+.media-card .media-info{padding:22px 25px;display:flex;justify-content:space-between;gap:12px;align-items:start}
+.media-info h3{font:500 26px var(--serif);letter-spacing:-.035em;margin:0 0 8px}
+.dark-showcase .media-info h3{font-family:var(--modern);font-size:22px;font-weight:700;letter-spacing:-.04em}
+.media-info p{font:400 11px/1.65 var(--sans);color:#b9b9b2;margin:0}
+.media-info small{font:700 9px var(--modern);color:#e2e8ce;letter-spacing:.14em;white-space:nowrap}
+.media-note{font-size:11px;margin:20px 0 0;color:#706f69}
+.dark-showcase .media-note{color:#aeafae}
+.photo-break{height:400px;position:relative;overflow:hidden;background:#141311}
+.photo-break img{width:100%;height:100%;object-fit:cover;object-position:center 50%}
+.photo-break::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#18141270,transparent 68%)}
+.photo-break span{position:absolute;z-index:2;left:clamp(24px,7vw,115px);bottom:40px;color:#fff;font:italic 50px var(--serif);text-shadow:0 2px 10px #17131177}
+/* micro feedback improvements */
+.review-placeholder{font-size:clamp(18px,1.7vw,26px)}
+@media (max-width:900px){.media-cards{grid-template-columns:1fr 1fr}.media-head{gap:25px}.portrait-frame{width:85%}}
+@media (max-width:760px){.home-hero-right{min-height:500px}.portrait-frame{height:83%;width:78%;margin:55px 0 0}.wedding-visual{min-height:480px}.wedding-visual .wedding-live-image{object-position:39% 52%}.corp-visual{min-height:485px}.corp-visual .corporate-live-image{object-position:50% 35%}.card-art{height:260px}.team-gallery{grid-template-columns:1fr 1fr}.team-gallery figure{min-height:190px}.team-gallery figure:first-child{grid-column:1/-1;max-height:310px}.media-showcase{padding:70px 24px}.media-head{display:block;margin:35px 0 24px}.media-head h2{font-size:48px}.media-cards{grid-template-columns:1fr}.media-card video{aspect-ratio:16/9}.photo-break{height:270px}.photo-break span{font-size:34px}.media-info h3{font-size:23px}}
+@media (max-width:460px){.wedding-hero .wedding-visual{min-height:480px}.portrait-frame{height:82%;width:85%}.home-hero-right{min-height:460px}.media-head h2{font-size:44px}.card-display-serif{font-size:42px}.card-display-modern{font-size:50px}}

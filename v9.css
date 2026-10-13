@@ -1,0 +1,23 @@
+/* V9: independently sourced HIAS Acara team testimonials */
+.testimonials--hias-real{background:#191311;color:#e6e8d4;padding-top:95px;padding-bottom:95px;}
+.testimonials--hias-real .reviews-lead h2{font-size:clamp(44px,5.3vw,80px);}
+.testimonials--hias-real .reviews-lead h2 em{color:#dfe7c5;}
+.testimonials--hias-real .reviews-lead>p{color:#c6c6b9;}
+.hias-real-review-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+.testimonials--hias-real .hias-real-review{background:#302925;border:1px solid #514842;color:#f0efe4;border-top:2px solid #adb993;min-height:340px;}
+.testimonials--hias-real .hias-real-review:nth-child(2){background:#27221f;}
+.testimonials--hias-real .hias-real-review:nth-child(3){background:#35332b;}
+.testimonials--hias-real .review-quote{font-size:clamp(21px,2.2vw,31px);line-height:1.4;color:#f2f2e8;}
+.testimonials--hias-real .review-seq{color:#c5cba8;}
+.testimonials--hias-real .review-mark{color:#c7d3a6;}
+.testimonials--hias-real .review-credit small{color:#c8c5ba;}
+.testimonials--hias-real .reviews-notice{color:#aead9f;max-width:760px;}
+.hias-more-reviews{margin-top:23px;border-top:1px solid #6c6759;border-bottom:1px solid #6c6759;}
+.hias-more-reviews summary{padding:23px 4px;cursor:pointer;display:flex;justify-content:space-between;gap:15px;align-items:center;color:#e4e8d2;font:650 12px var(--sans);letter-spacing:.035em;list-style:none;}
+.hias-more-reviews summary::-webkit-details-marker{display:none;}
+.hias-more-reviews summary span{font-size:24px;transition:transform .2s;}
+.hias-more-reviews[open] summary span{transform:rotate(45deg);}
+.hias-extra-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:23px;}
+.hias-extra-grid .hias-real-review{min-height:275px;}
+@media(max-width:950px){.hias-real-review-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.hias-real-review-grid .hias-real-review:nth-child(3){grid-column:span 2;}}
+@media(max-width:760px){.testimonials--hias-real{padding:65px 24px;}.hias-real-review-grid,.hias-extra-grid{grid-template-columns:1fr;}.hias-real-review-grid .hias-real-review:nth-child(3){grid-column:auto;}.testimonials--hias-real .hias-real-review{min-height:260px;}.testimonials--hias-real .review-quote{font-size:25px;}}
