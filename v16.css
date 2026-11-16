@@ -41,3 +41,8 @@
 .media-card-youtube .media-info a:hover{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:900px){.media-cards.media-cards-three{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.media-cards.media-cards-three{grid-template-columns:1fr}}
+/* Corporate portfolio: balanced dinner row */
+.media-cards.media-cards-four{grid-template-columns:repeat(2,minmax(0,1fr))}
+.media-cards-four .media-row-label{grid-column:1/-1;margin:1rem 0 -.25rem;padding-top:.35rem;border-top:1px solid rgba(255,255,255,.16);font-size:.72rem;font-weight:700;letter-spacing:.16em;color:rgba(255,255,255,.68)}
+@media(max-width:760px){.media-cards.media-cards-four{grid-template-columns:1fr}}
+
