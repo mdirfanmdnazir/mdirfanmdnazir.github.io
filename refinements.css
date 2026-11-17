@@ -87,3 +87,16 @@ textarea:focus-visible { outline: 3px solid #84947b; outline-offset: 4px; }
   .royal-proof{grid-template-columns:1fr;padding:64px 24px;gap:36px}
   .royal-proof-copy h2{font-size:clamp(44px,12vw,64px)}
 }
+
+/* Meet the HIAS Acara emcees */
+.hias-page .host-roster{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;scroll-margin-top:110px}
+.hias-page .host-roster .host-card{min-width:0}
+.hias-page .host-roster .host-portrait{position:relative;aspect-ratio:4/5;height:auto;min-height:0;overflow:hidden;background:#302925}
+.hias-page .host-roster .host-portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.hias-page .host-roster .host-meta h3{font-size:clamp(25px,2.5vw,36px)}
+.hias-page .emcee-enquiry{display:flex;align-items:center;justify-content:space-between;gap:32px;margin-top:38px;padding-top:28px;border-top:1px solid rgba(40,33,28,.22)}
+.hias-page .emcee-enquiry>div{max-width:690px}
+.hias-page .emcee-enquiry .overline{margin:0 0 12px}
+.hias-page .emcee-enquiry p:not(.overline){font-size:15px;line-height:1.75;margin:0}
+.hias-page .emcee-enquiry .cta{flex-shrink:0}
+@media(max-width:760px){.hias-page .host-roster{grid-template-columns:1fr;gap:30px}.hias-page .host-roster .host-portrait{aspect-ratio:4/5;max-height:560px}.hias-page .emcee-enquiry{display:block}.hias-page .emcee-enquiry .cta{margin-top:24px}}
