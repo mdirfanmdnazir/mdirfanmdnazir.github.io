@@ -110,3 +110,12 @@ textarea:focus-visible { outline: 3px solid #84947b; outline-offset: 4px; }
 .hias-page .emcee-section-head>p{font-size:16px;line-height:1.75;margin:0;max-width:52ch}
 .hias-page .emcee-section .host-irfan img{object-position:50% 48%;transform:scale(2.1);transform-origin:57% 38%}
 @media(max-width:760px){.hias-page .emcee-section-head{grid-template-columns:1fr;gap:22px;margin-bottom:28px;padding-bottom:28px}.hias-page .emcee-section .host-roster{margin-top:0}}
+
+/* Uniform emcee cards: override legacy half-width final-card rule */
+.hias-page .emcee-section .host-roster > .host-card{width:100%;max-width:none;grid-column:auto;justify-self:stretch}
+.hias-page .emcee-section .host-portrait::after{display:none}
+@media(max-width:760px){
+.hias-page .emcee-section .host-roster{grid-template-columns:minmax(0,1fr);width:100%}
+.hias-page .emcee-section .host-roster > .host-card:last-child{width:100%;max-width:none;grid-column:auto}
+.hias-page .emcee-section .host-portrait{width:100%;height:auto;max-height:none;aspect-ratio:4/5}
+}
