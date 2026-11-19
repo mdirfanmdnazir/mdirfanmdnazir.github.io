@@ -11,7 +11,7 @@
 .mic-wave i{display:block;width:2px;height:5px;background:#c2cba9;border-radius:2px}
 .mic-wave i:nth-child(2),.mic-wave i:nth-child(4){height:11px}
 .mic-wave i:nth-child(3){height:19px}
-.mic-playing .mic-disc{background:#dce3c5;color:#211b17;box-shadow:0 0 0 8px rgba(220,227,197,.06),0 0 35px rgba(220,227,197,.2)}
+.mic-playing .mic-hello .mic-disc{background:#dce3c5;color:#211b17;box-shadow:0 0 0 8px rgba(220,227,197,.06),0 0 35px rgba(220,227,197,.2)}
 .mic-playing .mic-wave i{animation:mic-wave .75s ease-in-out infinite alternate}
 .mic-playing .mic-wave i:nth-child(2){animation-delay:-.3s}
 .mic-playing .mic-wave i:nth-child(3){animation-delay:-.55s}
