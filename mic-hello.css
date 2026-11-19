@@ -1,0 +1,27 @@
+/* Optional, tap-to-play welcome. The page never waits for audio. */
+.mic-hello{display:flex;align-items:center;gap:16px;margin:30px 0 0;padding:0;border:0;background:none;color:#e4e8cf;text-align:left;cursor:pointer;font:inherit;max-width:100%}
+.mic-hello:focus-visible{outline:2px solid #e4e8cf;outline-offset:8px;border-radius:8px}
+.mic-disc{display:grid;place-items:center;width:64px;height:64px;flex:0 0 64px;border:1px solid #929b80;border-radius:50%;background:rgba(228,232,207,.04);transition:background .4s,box-shadow .4s,transform .3s}
+.mic-disc svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.mic-hello:hover .mic-disc{background:rgba(228,232,207,.13);transform:translateY(-2px)}
+.mic-copy{display:flex;flex-direction:column;gap:5px;min-width:0}
+.mic-copy strong{font-size:16px;font-weight:500;line-height:1.4}
+.mic-copy small{font-size:14px;color:#c1bcb1;line-height:1.5}
+.mic-wave{display:flex;align-items:center;justify-content:center;gap:3px;height:24px;margin-left:2px}
+.mic-wave i{display:block;width:2px;height:5px;background:#c2cba9;border-radius:2px}
+.mic-wave i:nth-child(2),.mic-wave i:nth-child(4){height:11px}
+.mic-wave i:nth-child(3){height:19px}
+.mic-playing .mic-disc{background:#dce3c5;color:#211b17;box-shadow:0 0 0 8px rgba(220,227,197,.06),0 0 35px rgba(220,227,197,.2)}
+.mic-playing .mic-wave i{animation:mic-wave .75s ease-in-out infinite alternate}
+.mic-playing .mic-wave i:nth-child(2){animation-delay:-.3s}
+.mic-playing .mic-wave i:nth-child(3){animation-delay:-.55s}
+.mic-playing .mic-wave i:nth-child(4){animation-delay:-.15s}
+.mic-playing .mic-wave i:nth-child(5){animation-delay:-.4s}
+.home-page .home-hero-right::after{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 12%,rgba(234,239,209,.25),transparent 68%);opacity:0;transition:opacity .65s;z-index:2}
+.home-page .home-hero-right .portrait-frame{transition:filter .65s}
+.home-page .mic-playing .home-hero-right::after{opacity:1}
+.home-page .mic-playing .portrait-frame{filter:brightness(1.15)}
+.mic-status{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@keyframes mic-wave{from{transform:scaleY(.4)}to{transform:scaleY(1.1)}}
+@media(max-width:480px){.mic-hello{gap:12px;margin-top:24px}.mic-disc{width:56px;height:56px;flex-basis:56px}.mic-wave{gap:2px}.mic-copy strong{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.mic-hello *,.home-page .home-hero-right::after,.home-page .home-hero-right .portrait-frame{transition:none!important;animation:none!important}}

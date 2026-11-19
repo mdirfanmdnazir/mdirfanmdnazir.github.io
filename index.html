@@ -20,6 +20,8 @@
 <link href="v15.css" rel="stylesheet">
 <link href="v16.css" rel="stylesheet">
 <script defer src="youtube-gallery.js"></script><link href="refinements.css?v=20261116-royal" rel="stylesheet">
+<link href="mic-hello.css?v=20261119" rel="stylesheet">
+<script defer src="mic-hello.js?v=20261119"></script>
 </head>
 
 <body class="home-page">
@@ -36,6 +38,13 @@
 <div class="hero-actions">
 <button class="cta cta-sage enquiry-trigger" data-enquiry="Other event" type="button">Tell me about your event <span class="ui-arrow ui-arrow-ne" aria-hidden="true"></span></button><a class="under-link" href="#hello">Get to know me <span class="ui-arrow ui-arrow-down" aria-hidden="true"></span></a>
 </div>
+<button class="mic-hello" data-mic-hello type="button" aria-label="Play Irfan’s welcome greeting" aria-pressed="false" aria-describedby="micHint" hidden>
+<span class="mic-disc" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="11" y="3" width="10" height="17" rx="5"/><path d="M7 14v2a9 9 0 0 0 18 0v-2M16 25v5M11 30h10M12 9h8M12 13h8"/></svg></span>
+<span class="mic-copy"><strong id="micLabel">Tap the mic. Meet your emcee.</strong><small id="micHint">A quick hello, in my own voice.</small></span>
+<span class="mic-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+</button>
+<audio id="micGreeting" preload="none" src="assets/irfan-welcome.m4a"></audio>
+<span class="mic-status" id="micStatus" role="status" aria-live="polite"></span>
 <div class="hero-bottom">
 <span>BAHASA MELAYU &amp; ENGLISH</span><span>WEDDINGS · CORPORATE</span>
 </div>
